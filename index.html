@@ -25,13 +25,13 @@
         <!-- Banner block i.e. carousel -->
         
         <div class="row">
-            <div class="col-sm-10 col-sm-push-2">
-                <main>
+            <div class="col-sm-8">
+                <main role="main">
                     
 
                     <section id="images">
                         <h2 class="page-header">Images</h2>
-                        <p class="lead">Images are inherently inaccessible by nature.</p>
+                        <p class="lead">Images are inherently inaccessible by nature, particularly for those with visual disabilities.</p>
 
 
                         <h3>Alternate text</h3>
@@ -40,9 +40,11 @@
 
 
                         <h3>Long description</h3>
-
+                        <p>For images that require more complex description, such as a graph, or a chart, a more detailed description is usually required.</p>
 
                         <h3>Aesthetic images</h3>
+                        <p>Images that serve no purpose other than for aesthetic reasons, such as decorative images, can safely be ignored by screen readers. 
+                            This can be achieved by simple including an empty string as the value for the <code>alt</code> attribute.</p>
                     </section>
                     <section id="content">
                         <h2 class="page-header">Content</h2>
@@ -61,8 +63,17 @@
                     </section>
                 </main>
             </div>
-            <div class="col-sm-2 col-sm-pull-2">
-                
+            <div class="col-sm-4">
+                <aside role="complementary">
+                    <nav>
+                        <ul>
+                            <li><a href="#images">Images</a></li>
+                            <li><a href="#content">Content</a></li>
+                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="#widgets">Widgets</a></li>
+                        </ul>
+                    </nav>
+                </aside>
             </div>
         </div>
     </div>
