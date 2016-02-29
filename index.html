@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Web Accessibility Demo</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <a href="#content" class="sr-only">Skip to main content</a>
+
+    <header role="banner">
+        <nav id="sitenav">
+
+        </nav>
+    </header>
+
+    <div id="content" class="container">
+        <h1>Web Accessibility Demo</h1>
+        
+        <!-- Banner block i.e. carousel -->
+        
+        <div class="row">
+            <div class="col-sm-10 col-sm-push-2">
+                <main>
+                    
+
+                    <section id="images">
+                        <h2 class="page-header">Images</h2>
+                        <p class="lead">Images are inherently inaccessible by nature.</p>
+
+
+                        <h3>Alternate text</h3>
+                        <p>Alternate texts can be used to include a description of an image. This will ensure that assistive
+                            technologies, such as screen readers, read this out to site visitors.</p>
+
+
+                        <h3>Long description</h3>
+
+
+                        <h3>Aesthetic images</h3>
+                    </section>
+                    <section id="content">
+                        <h2 class="page-header">Content</h2>
+                        <p></p>
+                    </section>
+                    <section id="forms">
+                        <h2 class="page-header">Forms and form validation</h2>
+                        <p class="lead">Forms are an essential part of any website, as it is the platform on which visitors interact with the site. As such, accessibility plays an important role in ensuring the best possible experience for site visitors.</p>
+
+
+                    </section>
+                    
+                    <section id="widgets">
+                        <h2 class="page-header">Widgets</h2>
+                        <p class="lead"></p>
+                    </section>
+                </main>
+            </div>
+            <div class="col-sm-2 col-sm-pull-2">
+                
+            </div>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+
+    </footer>
+</body>
+
+</html>
