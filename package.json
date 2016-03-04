@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-      "lite": "lite-server",
-      "start": "npm run lite"
+    "lite": "lite-server",
+    "start": "npm run lite"
   },
   "author": "Dzulqarnain Nasir <dzul1983@gmail.com> (http://dnasir.com)",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1"
   },
   "devDependencies": {
     "lite-server": "^2.1.0"
