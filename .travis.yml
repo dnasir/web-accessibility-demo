@@ -1,8 +1,0 @@
-sudo: false
-language: ruby
-rvm:
-  - 2.2.0
-install:
-  - npm install
-  - bundle install
-script: bundle exec jekyll build
