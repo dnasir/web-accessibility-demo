@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title><%= @document.title %></title>
     
-    <%- @getBlock('styles').toHTML() %>
+    <%- @getBlock('styles').add(['/vendor/bootstrap/dist/css/bootstrap.min.css']).toHTML() %>
 </head>
 <body>
-    <h1><%= @document.title %></h1>
     <%- @content %>
     
     <%- @getBlock('scripts').toHTML() %>

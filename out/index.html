@@ -1,152 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Web Accessibility Demo</title>
-    <meta name="description" content="A simple website demonstrating the various implementations of web accessibility on modern day websites."
-    />
-
-    <%- @getBlock('styles').add(['../node_modules/bootstrap/dist/css/bootstrap.min.css']).toHTML() %>
+    
+    <link  rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
 </head>
-
 <body>
     <a href="#content" class="sr-only">Skip to main content</a>
 
-    <header role="banner">
-        <nav id="sitenav">
+<header role="banner">
+    <nav id="sitenav">
 
-        </nav>
-    </header>
+    </nav>
+</header>
 
-    <div id="content" class="container">
-        <div class="well">
-            <h1>Web Accessibility Demo</h1>
-            <p class="lead">I have made this site to demonstrate the various implementations of web accessibility. It contains all the stuff
-                you would usually find on today's websites - or at least most of it.</p>
-            <p class="lead">This demo site follows the Web Content Accessibility Guidelines (WCAG) 2.0 AA standards.</p>
-            <p class="lead">I'll update this site as I find new components to implement web accessibility to.</p>
-        </div>
-
-        <div id="demo-carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators" aria-hidden="true">
-                <li data-target="#demo-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#demo-carousel" data-slide-to="1"></li>
-                <li data-target="#demo-carousel" data-slide-to="2"></li>
-                <li data-target="#demo-carousel" data-slide-to="3"></li>
-            </ol>
-            
-            <!-- Controls -->
-            <a class="left carousel-control" href="#demo-carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#demo-carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
-            <!-- Wrapper for slides -->
-            <ul class="carousel-inner list-unstyled" role="listbox">
-                <li class="item active">
-                    <img src="resources/images/slide1.jpg" alt="">
-                    <div class="carousel-caption">
-                        <p class="h2">Every website needs a carousel, right?</p>
-                        <p class="h3">It's like the epitome of every successful website ever.</p>
-                    </div>
-                </li>
-                <li class="item">
-                    <img src="resources/images/slide2.jpg" alt="">
-                    <div class="carousel-caption">
-                        <p class="h2">Is the slide image relevant to the slide?</p>
-                        <p class="h3">If they're purely decorative, you can leave the alternate text out.</p>
-                    </div>
-                </li>
-                <li class="item">
-                    <a href="http://dnasir.com">
-                        <img src="resources/images/slide3.jpg" alt="">
-                        <div class="carousel-caption">
-                            <p class="h2">This entire slide is a link!</p>
-                            <p class="h3">Clicking on it will take you to an awesome website.</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <img src="resources/images/slide4.jpg" alt="">
-                    <div class="carousel-caption">
-                        <p class="h3">Click <a href="http://dnasir.com">here</a> to access an awesome blog.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-8">
-                <main role="main">
-
-
-                    <section id="images">
-                        <h2 class="page-header">Images</h2>
-                        <p class="lead">Images are inherently inaccessible by nature, particularly for those with visual disabilities.</p>
-
-
-                        <h3>Alternate text</h3>
-                        <p>Alternate texts can be used to include a description of an image. This will ensure that assistive
-                            technologies, such as screen readers, read this out to site visitors.</p>
-
-
-                        <h3>Long description</h3>
-                        <p>For images that require more complex description, such as a graph, or a chart, a more detailed description
-                            is usually required.</p>
-
-                        <h3>Aesthetic images</h3>
-                        <p>Images that serve no purpose other than for aesthetic reasons, such as decorative images, can safely
-                            be ignored by screen readers. This can be achieved by simple including an empty string as the
-                            value for the <code>alt</code> attribute.</p>
-                    </section>
-                    <section id="content">
-                        <h2 class="page-header">Content</h2>
-                        <p></p>
-                    </section>
-                    <section id="forms">
-                        <h2 class="page-header">Forms and form validation</h2>
-                        <p class="lead">Forms are an essential part of any website, as it is the platform on which visitors interact with
-                            the site. As such, accessibility plays an important role in ensuring the best possible experience
-                            for site visitors.</p>
-
-
-                    </section>
-
-                    <section id="widgets">
-                        <h2 class="page-header">Widgets</h2>
-                        <p class="lead"></p>
-                    </section>
-                </main>
-            </div>
-            <div class="col-sm-4">
-                <aside role="complementary">
-                    <nav>
-                        <ul>
-                            <li><a href="#images">Images</a></li>
-                            <li><a href="#content">Content</a></li>
-                            <li><a href="#forms">Forms</a></li>
-                            <li><a href="#widgets">Widgets</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>
-        </div>
+<div id="content" class="container">
+    <div class="well">
+        <h1>Web Accessibility Demo</h1>
+        <p class="lead">I have made this site to demonstrate the various implementations of web accessibility. It contains all the stuff
+            you would usually find on today's websites - or at least most of it.</p>
+        <p class="lead">This demo site follows the Web Content Accessibility Guidelines (WCAG) 2.0 AA standards.</p>
+        <p class="lead">I'll update this site as I find new components to implement web accessibility to.</p>
     </div>
 
-    <footer role="contentinfo">
+    <div id="demo-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" aria-hidden="true">
+            <li data-target="#demo-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#demo-carousel" data-slide-to="1"></li>
+            <li data-target="#demo-carousel" data-slide-to="2"></li>
+            <li data-target="#demo-carousel" data-slide-to="3"></li>
+        </ol>
 
-    </footer>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#demo-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#demo-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Wrapper for slides -->
+        <ul class="carousel-inner list-unstyled" role="listbox">
+            <li class="item active">
+                <img src="resources/images/slide1.jpg" alt="">
+                <div class="carousel-caption">
+                    <p class="h2">Every website needs a carousel, right?</p>
+                    <p class="h3">It's like the epitome of every successful website ever.</p>
+                </div>
+            </li>
+            <li class="item">
+                <img src="resources/images/slide2.jpg" alt="">
+                <div class="carousel-caption">
+                    <p class="h2">Is the slide image relevant to the slide?</p>
+                    <p class="h3">If they're purely decorative, you can leave the alternate text out.</p>
+                </div>
+            </li>
+            <li class="item">
+                <a href="http://dnasir.com">
+                    <img src="resources/images/slide3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <p class="h2">This entire slide is a link!</p>
+                        <p class="h3">Clicking on it will take you to an awesome website.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <img src="resources/images/slide4.jpg" alt="">
+                <div class="carousel-caption">
+                    <p class="h3">Click <a href="http://dnasir.com">here</a> to access an awesome blog.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <main role="main">
+
+
+                <section id="images">
+                    <h2 class="page-header">Images</h2>
+                    <p class="lead">Images are inherently inaccessible by nature, particularly for those with visual disabilities.</p>
+
+
+                    <h3>Alternate text</h3>
+                    <p>Alternate texts can be used to include a description of an image. This will ensure that assistive technologies,
+                        such as screen readers, read this out to site visitors.</p>
+
+
+                    <h3>Long description</h3>
+                    <p>For images that require more complex description, such as a graph, or a chart, a more detailed description
+                        is usually required.</p>
+
+                    <h3>Aesthetic images</h3>
+                    <p>Images that serve no purpose other than for aesthetic reasons, such as decorative images, can safely
+                        be ignored by screen readers. This can be achieved by simple including an empty string as the value
+                        for the <code>alt</code> attribute.</p>
+                </section>
+                <section id="content">
+                    <h2 class="page-header">Content</h2>
+                    <p></p>
+                </section>
+                <section id="forms">
+                    <h2 class="page-header">Forms and form validation</h2>
+                    <p class="lead">Forms are an essential part of any website, as it is the platform on which visitors interact with the
+                        site. As such, accessibility plays an important role in ensuring the best possible experience for
+                        site visitors.</p>
+
+
+                </section>
+
+                <section id="widgets">
+                    <h2 class="page-header">Widgets</h2>
+                    <p class="lead"></p>
+                </section>
+            </main>
+        </div>
+        <div class="col-sm-4">
+            <aside role="complementary">
+                <nav>
+                    <ul>
+                        <li><a href="#images">Images</a></li>
+                        <li><a href="#content">Content</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#widgets">Widgets</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+</div>
+    
+    
 </body>
-
 </html>
