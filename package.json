@@ -1,14 +1,19 @@
 {
   "name": "web-accessibility-demo",
   "version": "1.0.0",
-  "description": "This is a simple demo website demonstrating the implementation of web accessibility in commonly used website components.",
+  "description": "",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
   "author": "Dzulqarnain Nasir <dzul1983@gmail.com> (http://dnasir.com)",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^2.2.1",
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "lite-server": "^2.1.0"
+  }
 }
