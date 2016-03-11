@@ -1,0 +1,18 @@
+{
+  "name": "web-accessibility-demo",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Dzulqarnain Nasir <dzul1983@gmail.com> (http://dnasir.com)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dnasir/web-accessibility-demo",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "static",
+    "test",
+    "tests"
+  ]
+}

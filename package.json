@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "lite": "lite-server",
-    "start": "npm run lite"
+    "start": "npm run docpad-run",
+    "docpad-init": "docpad init",
+    "docpad-run": "docpad run"
   },
   "author": "Dzulqarnain Nasir <dzul1983@gmail.com> (http://dnasir.com)",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.2.1"
   },
   "devDependencies": {
-    "lite-server": "^2.1.0"
+    "docpad": "~6.78.4",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.4"
   }
 }
