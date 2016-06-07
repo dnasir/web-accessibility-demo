@@ -4,5 +4,16 @@
             "deployRemote": "origin",
             "deployBranch": "gh-pages"
         }
+    },
+    "templateData": {
+        "site": {
+            "styles": [
+                "/vendor/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+                "/vendor/jquery/dist/jquery.min.js",
+                "/vendor/bootstrap/dist/js/bootstrap.min.js"
+            ]
+        }
     }
 }
